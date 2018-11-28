@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LXS-ON-lUQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5rm-dK-E2Z">
+            <objects>
+                <viewController id="LXS-ON-lUQ" customClass="ViewController" customModule="Camera___Photo_Galery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dh5-w5-2yO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ag7-f1-0HB">
+                                <rect key="frame" x="10" y="30" width="355" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="vqv-oD-XOt"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixv-vu-UrA">
+                                <rect key="frame" x="10" y="627" width="355" height="30"/>
+                                <state key="normal" title="Plz Click"/>
+                                <connections>
+                                    <action selector="actionPlzClick:" destination="LXS-ON-lUQ" eventType="touchUpInside" id="Wmm-Ac-qIY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ag7-f1-0HB" firstAttribute="top" secondItem="GVb-aA-9le" secondAttribute="top" constant="10" id="28Z-VR-Bmk"/>
+                            <constraint firstItem="ixv-vu-UrA" firstAttribute="leading" secondItem="GVb-aA-9le" secondAttribute="leading" constant="10" id="5Pi-w3-QVR"/>
+                            <constraint firstItem="GVb-aA-9le" firstAttribute="trailing" secondItem="ixv-vu-UrA" secondAttribute="trailing" constant="10" id="QGM-0r-HhX"/>
+                            <constraint firstItem="GVb-aA-9le" firstAttribute="bottom" secondItem="ixv-vu-UrA" secondAttribute="bottom" constant="10" id="U63-AV-cbD"/>
+                            <constraint firstItem="ag7-f1-0HB" firstAttribute="leading" secondItem="GVb-aA-9le" secondAttribute="leading" constant="10" id="acf-Qv-SQK"/>
+                            <constraint firstItem="GVb-aA-9le" firstAttribute="trailing" secondItem="ag7-f1-0HB" secondAttribute="trailing" constant="10" id="yya-1g-2U5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GVb-aA-9le"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="ag7-f1-0HB" id="9Nm-0j-WBM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c1Q-QC-dp7" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
